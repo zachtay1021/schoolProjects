@@ -1,5 +1,5 @@
 # schoolProjects
-I will upload projects that I did in College.
+I will upload projects that I did in college.
 <br>
 <br>
 ### cipherProject
