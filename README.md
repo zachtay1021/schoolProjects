@@ -2,5 +2,8 @@
 I will upload projects that I did in college.
 <br>
 <br>
-### cipherProject
-For my final project in my intro to python course, I created a simple cipher creation tool. It has four ciphers to choose from and allows for you to encrypt any messages you want.
+### CINF108 - Programming for Problem Solving
+An introductory course to Python and Git.
+
+### CINF308 - Programming for Informatics
+A course designed to expand on the teachings from CINF108 with a focus on more advanced Python programs.
