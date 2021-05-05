@@ -23,6 +23,8 @@ class Clock(TimeType):
             return False
 
     def setClock(self, hrs, mins, secs, mon, dy, yr):  # Set the time and date of the clock using the given values
+        if Clock.leapyear(self, yr) is True:  # Checks to see if the year if a leap year
+            daysInMonth[1] = 29  # If year is leap year, set the index of 1 (February) to 29
 
         if TimeType.set_hours(self, hrs) is False:
             return False
@@ -43,8 +45,6 @@ class Clock(TimeType):
             return False
 
         else:
-            if Clock.leapyear(self, yr) is True:  # Checks to see if the year if a leap year
-                daysInMonth[1] = 29  # If year is leap year, set the index of 1 (February) to 29
 
             self.__hrs = hrs
             self.__mins = mins
@@ -76,10 +76,10 @@ class Clock(TimeType):
         self.__dy = int(self.__dy) - 1
         if int(self.__dy) == 0:  # If day is equal to 0
             self.__mon = self.__mon - 1  # Decrease month by 1
+            self.__dy = daysInMonth[self.__mon - 1]  # Set day to max number of month
             if self.__mon == 0:  # If month is equal to 0
                 self.__mon = 12  # Set month to 12
                 self.__yr = int(self.__yr) - 1  # Decrease year by 1
-                self.__dy = daysInMonth[self.__mon - 1]  # Set day to max number of month
         daysInMonth[1] = 28
 
     def increaseSecond(self):  # Increase the second
