@@ -1,0 +1,2 @@
+- For this assignment, I take my Clock.py and add a GUI to it. 
+- I use the Python library tkinter to add buttons, listboxes, and displays that allow the user to select options to set the clock.
