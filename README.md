@@ -8,3 +8,7 @@ An introductory course to Python and Git.
 <br>
 ### CINF308 - Programming for Informatics
 A course designed to expand on the teachings from CINF108 with a focus on more advanced Python programs.
+<br>
+<br>
+### CINF405 - Advanced Concepts in Software Development
+A course designed to expand on the teachings from CINF308 with a focus on more advanced Python programs.
